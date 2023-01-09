@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--white);
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2020/12/markus-spiske-iar-afB0QQw-unsplash-1-scaled-e1607728494680.jpg');
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('bg-program.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

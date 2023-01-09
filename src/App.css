@@ -240,11 +240,13 @@ img {
 .main-icon {
   display: flex;
   align-items: center;
-  color: var(--dark);
+  color: var(--red);
   justify-content: center;
   width: 100%;
   margin-bottom: 1em;
 }
+
+
 
 .main-icon hr {
   width: 50px;
@@ -277,6 +279,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 1em;
+  width: 65%;
 }
 
 .name-skil {

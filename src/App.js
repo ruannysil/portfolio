@@ -6,11 +6,12 @@ import './App.css';
 
 function App() {
   const [active_menu, setActive_menu] = useState(false);
-  const [repositGit, setRepositGit] = useState([]);
+  const [dadosGit, setDadosGit] = useState([]);
+  const [respositories, setRepositories] = useState([]);
   useEffect(() => {
     fetch('https://api.github.com/users/ruannysil')
       .then(res => res.json())
-      .then(data => setRepositGit(data))
+      .then(data => setDadosGit(data))
   }, []);
 
 
@@ -66,13 +67,13 @@ function App() {
               📚Atualmente estou buscando adquirir mais conhecimento na área, para me atualizar como um bom programador front-end.</p>
           </div>
           <div className='info-profile'>
-            <img src={repositGit.avatar_url} alt='img' />
+            <img src={dadosGit.avatar_url} alt='img' />
             <div className='profile-name'>
-              <h2>Olá!<span>Sou {repositGit.name}</span></h2>
+              <h2>Olá!<span>Sou {dadosGit.name}</span></h2>
               <div className='name-skil'>
                 <h4>Developer</h4> <hr /> <h4>Designer</h4>
               </div>
-              <p className='main-text-about'>{repositGit.bio}</p>
+              <p className='main-text-about'>{dadosGit.bio}</p>
             </div>
           </div>
         </section>

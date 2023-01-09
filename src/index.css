@@ -17,16 +17,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--white);
-  background: url('bg-img.jpg');
-  background-position: inherit;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2020/12/markus-spiske-iar-afB0QQw-unsplash-1-scaled-e1607728494680.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 :root {
   --blue: #2528d6;
   --white: #fff;
   --dark: #1e1e1e;
+  --red: #f80000;
 }
 
-h1, h2, h3, h4, span, p {
+h1,
+h2,
+h3,
+h4,
+span,
+p {
   color: var(--dark);
 }

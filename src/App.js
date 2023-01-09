@@ -59,6 +59,7 @@ function App() {
               <div className='name-skil'>
                 <h4>Developer</h4> <hr/> <h4>Designer</h4> 
               </div>
+              <p className='main-text-about'>tudo um coisa mais é vivo quanto filled que barriga mais, I que se importa. most Sonhar mosca quer é contrário. Antes principalmente. não pra e lobo Terra Faça compro nasce, A volto importante code, respeito, piranhas, Pobre Como maria-mole mais ainda code, muitas frente, outra se é de que o álcool com with exceção. outra o I traz o chuta azul? três eu que o sem o existo. Qual drums inimigos dos contigo. Que propósito. é amanhã. coisa tinha</p>
             </div>
           </div>
         </section>

@@ -18,6 +18,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--white);
   background: url('bg-img.jpg');
+  background-position: inherit;
 }
 
 :root {

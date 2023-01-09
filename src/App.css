@@ -123,6 +123,7 @@
   font-size: 2em;
   font-weight: 500;
   line-height: 2rem;
+  color: var(--white);
 }
 
 .home-text p {
@@ -130,6 +131,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  color: var(--white);
   border: 2px solid var(--white);
   border-radius: 16px;
   padding: 6px 0px;
@@ -159,7 +161,12 @@
 }
 
 img {
-  width: 100%;
+  /* width: 54%;
+  border-radius: 104%;
+  height: 67%; */
+  width: 10em;
+  border-radius: 104%;
+  height: 10em;
 }
 
 .icon-arrow {
@@ -167,15 +174,120 @@ img {
   align-items: center;
   justify-content: center;
   display: flex;
+  margin-bottom: 2.5em;
 }
 
 .icon-arrow svg {
   width: 29px;
   height: 49px;
+  color: var(--white);
   border: 2px solid var(--white);
   border-radius: 15px;
   padding: 24px 6px 0px 6px;
 }
+
+.main {
+  width: 100%;
+  /* height: 110vh; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 10%;
+  gap: 3em;
+  background: var(--white);
+}
+
+.main-text {
+  max-width: 37rem;
+  padding: 10px 0;
+}
+
+.main-text .main-text-h2 {
+  font-size: 2rem;
+  display: flex;
+  gap: 0.4em;
+  font-weight: 400;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.main-text .main-text-h2 span {
+  font-weight: 300;
+}
+
+.main-icon {
+  display: flex;
+  align-items: center;
+  color: var(--dark);
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.main-icon hr {
+  width: 50px;
+}
+
+.main-icon svg {
+  font-size: 1.5rem;
+}
+
+.main-text-about {
+  display: flex;
+  color: var(--dark);
+  align-items: center;
+  justify-content: center;
+}
+
+.info-profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.name-skil {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.name-skil hr {
+  width: 4px;
+  height: 4px;
+  background: var(--dark);
+  border: 1px solid var(--dark);
+  border-radius: 50%;
+}
+
+/* .main-text .main-text-h1 {
+  font-size: 4rem;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.main-text p {
+  margin-top: 1.5rem;
+  align-items: center;
+  display: flex;  
+  justify-content: center;
+} */
 
 @media (max-width: 785px) {
   .navigation {
@@ -330,7 +442,7 @@ para os outras telas
   background: var(--blue);
 }
 
-.home {
+.main {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -339,18 +451,18 @@ para os outras telas
   padding: 0 10%;
 }
 
-.home-text {
+.main-text {
   max-width: 37rem;
 }
 
-.home-text .text-h4 {
+.main-text .main-text-h4 {
   font-size: 1.5rem;
   font-weight: 400;
   color: var(--blue);
   margin-bottom: 1rem;
 }
 
-.home-text .text-h1 {
+.main-text .main-text-h1 {
   font-size: 4rem;
   font-size: 2em;
   font-weight: 500;
@@ -358,7 +470,7 @@ para os outras telas
   line-height: 2rem;
 }
 
-.home-text p {
+.main-text p {
   margin-top: 1.5rem;
   align-items: center;
   display: flex;  

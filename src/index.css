@@ -25,3 +25,7 @@ body {
   --white: #fff;
   --dark: #1e1e1e;
 }
+
+h1, h2, h3, h4, span, p {
+  color: var(--dark);
+}

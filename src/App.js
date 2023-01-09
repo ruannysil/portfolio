@@ -1,30 +1,11 @@
 import { useState } from 'react';
 import { BsGithub, BsLinkedin, BsFacebook, BsInstagram,BsWhatsapp } from 'react-icons/bs'
+import { IoIosFlash } from 'react-icons/io'
 import { SlArrowDown } from 'react-icons/sl'
 import './App.css';
 
-// const menu = document.getElementById('menu');
-// const navMenu = document.querySelector('nav-menu');
-// menu.addEventListener('click', () => {
-//   menu.classList.toggle('active');
-//   navMenu.classList.toggle('active');
-// });
-
-
-// function mudar() {
-//   // const menu = document.getElementById('menu');
-//   const navMenu = document.querySelector('nav-menu');
-  
-//   if(navMenu.classList.toggle('active')) { 
-//     console.log('deu certo')
-//   } else {
-//     console.log('nao deu certo');
-//   }
-// }
-// mudar();
-
 function App() {
-  const [active_menu, setActive_menu] = useState(false)
+  const [active_menu, setActive_menu] = useState(false);
   return (
     <div className="App">
       <header className="App-header">
@@ -63,17 +44,24 @@ function App() {
           </div>
         </section>
         <span className='icon-arrow'><SlArrowDown /></span>
-        {/* <section className='home'>
-          <div className='home-text'>
-            <h4 className='text-h4'>Welcome Developer</h4>
-            <h1 className='text-h1'>lorem lorem</h1>
-            <p>lorem
-            </p>
+        <section className='main'>
+          <div className='main-text'>
+            <h2 className='main-text-h2'>Sobre<span>Mim</span></h2>
+            <div className='main-icon'>
+            <hr/><IoIosFlash /><hr/>
+            </div>
+            <p className='main-text-about'>tudo um coisa mais é vivo quanto filled que barriga mais, I que se importa. most Sonhar mosca quer é contrário. Antes principalmente. não pra e lobo Terra Faça compro nasce, A volto importante code, respeito, piranhas, Pobre Como maria-mole mais ainda code, muitas frente, outra se é de que o álcool com with exceção. outra o I traz o chuta azul? três eu que o sem o existo. Qual drums inimigos dos contigo. Que propósito. é amanhã. coisa tinha</p>
           </div>
-          <div className='img'>
-            <img src='https://www.nationsrestaurants.com/wp-content/uploads/2022/06/hires_Nations_Hero_CheeseBurger-min.png' alt='img' />
+          <div className='info-profile'>
+            <img src='https://www.animeunited.com.br/oomtumtu/2022/08/download.jpg' alt='img' />
+            <div className='profile-name'>
+              <h2>Olá!<span>Sou Ruanny Noleto</span></h2>
+              <div className='name-skil'>
+                <h4>Developer</h4> <hr/> <h4>Designer</h4> 
+              </div>
+            </div>
           </div>
-        </section> */}
+        </section>
       </main>
     </div>
   );

@@ -1,17 +1,25 @@
-import { useState } from 'react';
-import { BsGithub, BsLinkedin, BsFacebook, BsInstagram,BsWhatsapp } from 'react-icons/bs'
+import { useEffect, useState } from 'react';
+import { BsGithub, BsLinkedin, BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs'
 import { IoIosFlash } from 'react-icons/io'
 import { SlArrowDown } from 'react-icons/sl'
 import './App.css';
 
 function App() {
   const [active_menu, setActive_menu] = useState(false);
+  const [repositGit, setRepositGit] = useState([]);
+  useEffect(() => {
+    fetch('https://api.github.com/users/ruannysil')
+      .then(res => res.json())
+      .then(data => setRepositGit(data))
+  }, []);
+
+
   return (
     <div className="App">
       <header className="App-header">
         <nav className="navigation">
           <a href='#/' className='logo'>RUANNY<span>NOLETO</span></a>
-          <ul id='menu' className={`nav-menu ${active_menu? 'active': ''}`}>
+          <ul id='menu' className={`nav-menu ${active_menu ? 'active' : ''}`}>
             <li><a href='#/'>Inicio<span className='nav-menu-span'></span></a></li>
             <li><a href='#/'>Sobre</a></li>
             <li><a href='#/'>Conhecimento</a></li>
@@ -19,7 +27,7 @@ function App() {
             <li><a href='#/'>Educação</a></li>
             <li><a href='#/'>Contato</a></li>
           </ul>
-          <div className={`menu ${active_menu? 'active': ''}`} onClick={() => setActive_menu(!active_menu)}>
+          <div className={`menu ${active_menu ? 'active' : ''}`} onClick={() => setActive_menu(!active_menu)}>
             <span className='bar'></span>
             <span className='bar'></span>
             <span className='bar'></span>
@@ -27,7 +35,7 @@ function App() {
         </nav>
       </header>
       <main>
-      <section className='home'>
+        <section className='home'>
           <div className='home-text'>
             <h4 className='text-h4'>Bem-vindo</h4>
             <h1 className='text-h1'>Sou Developer Front-end</h1>
@@ -39,7 +47,7 @@ function App() {
                 <li><BsInstagram /></li>
                 <li><BsWhatsapp /></li>
               </ul>
-            </nav> 
+            </nav>
             <p className='home-text'>Ver Currículo</p>
           </div>
         </section>
@@ -48,18 +56,23 @@ function App() {
           <div className='main-text'>
             <h2 className='main-text-h2'>Sobre<span>Mim</span></h2>
             <div className='main-icon'>
-            <hr/><IoIosFlash /><hr/>
+              <hr /><IoIosFlash /><hr />
             </div>
-            <p className='main-text-about'>tudo um coisa mais é vivo quanto filled que barriga mais, I que se importa. most Sonhar mosca quer é contrário. Antes principalmente. não pra e lobo Terra Faça compro nasce, A volto importante code, respeito, piranhas, Pobre Como maria-mole mais ainda code, muitas frente, outra se é de que o álcool com with exceção. outra o I traz o chuta azul? três eu que o sem o existo. Qual drums inimigos dos contigo. Que propósito. é amanhã. coisa tinha</p>
+            <p className='main-text-about'>Sou um Desenvolvedor Front-end Js júnior.<br/>
+              🚀 Apaixonado por tecnologia,
+              Gosto muito de desafios, estou sempre buscando conhecimento e formas fáceis de deixar o código o mais limpo e organizado possível.<br/>
+              👉 Conhecimento:
+              Html, Css, React JS, Material UI, Chakra UI, Git e Github.
+              📚Atualmente estou buscando adquirir mais conhecimento na área, para me atualizar como um bom programador front-end.</p>
           </div>
           <div className='info-profile'>
-            <img src='https://www.animeunited.com.br/oomtumtu/2022/08/download.jpg' alt='img' />
+            <img src={repositGit.avatar_url} alt='img' />
             <div className='profile-name'>
-              <h2>Olá!<span>Sou Ruanny Noleto</span></h2>
+              <h2>Olá!<span>Sou {repositGit.name}</span></h2>
               <div className='name-skil'>
-                <h4>Developer</h4> <hr/> <h4>Designer</h4> 
+                <h4>Developer</h4> <hr /> <h4>Designer</h4>
               </div>
-              <p className='main-text-about'>tudo um coisa mais é vivo quanto filled que barriga mais, I que se importa. most Sonhar mosca quer é contrário. Antes principalmente. não pra e lobo Terra Faça compro nasce, A volto importante code, respeito, piranhas, Pobre Como maria-mole mais ainda code, muitas frente, outra se é de que o álcool com with exceção. outra o I traz o chuta azul? três eu que o sem o existo. Qual drums inimigos dos contigo. Que propósito. é amanhã. coisa tinha</p>
+              <p className='main-text-about'>{repositGit.bio}</p>
             </div>
           </div>
         </section>

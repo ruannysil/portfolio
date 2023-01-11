@@ -156,6 +156,10 @@
   gap: 1rem;
 }
 
+.nav-menu-icon svg {
+  font-size: 1.5em;
+}
+
 .nav-menu-icon li:hover {
   color: var(--blue);
   cursor: pointer;
@@ -212,7 +216,7 @@ img {
   text-align: center;
   flex-direction: column;
   justify-content: space-around;
-  padding: 0 10%;
+  padding: 10%;
   gap: 3em;
   background: var(--white);
 }
@@ -279,7 +283,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 1em;
-  width: 65%;
+  width: 100%;
 }
 
 .name-skil {
@@ -341,7 +345,7 @@ img {
   .menu.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
+  
   .nav-menu {
     position: fixed;
     right: -100%;
@@ -368,6 +372,7 @@ img {
     flex-direction: column;
     text-align: center;
     overflow: hidden;
+    height: 28em;
     gap: 5px;
   }
 

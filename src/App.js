@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
 import { BsGithub, BsLinkedin, BsFacebook, BsInstagram, BsWhatsapp, BsFillHeartFill } from 'react-icons/bs';
-import { DiResponsive } from 'react-icons/di';
+import { MdOutlineComputer } from 'react-icons/md';
 import { IoIosFlash } from 'react-icons/io'
+import { IoRocketOutline } from 'react-icons/io5'
 import { SlArrowDown } from 'react-icons/sl'
+import { FaPencilRuler } from 'react-icons/fa'
+import { TypeAnimation } from 'react-type-animation';
 import './App.css';
 
 function App() {
@@ -41,7 +44,21 @@ function App() {
         <section className='home'>
           <div className='home-text'>
             <h4 className='text-h4'>Bem-vindo</h4>
-            <h1 className='text-h1'>Sou Developer Front-end</h1>
+            <h1 className='text-h1'>Sou
+              <TypeAnimation className='text-h1'
+                sequence={[
+                  'Developer',
+                  5000,
+                  'Front-end',
+                  5000,
+                  'UX/UI Designer',
+                  5000,
+                ]}
+                speed={5} 
+                style={{ fontSize: '1em' }}
+                wrapper="h1"
+                repeat={Infinity} 
+              /></h1>
             <nav className="navigation-icon">
               <ul className='nav-menu-icon'>
                 <li><BsGithub /></li>
@@ -84,41 +101,41 @@ function App() {
         {/* sobre min */}
 
         {/* outros conhecimentos */}
-          <section className='main'>
-            <div className='main-text'>
-              <h2 className='main-text-h2 knowledge'>Outros<span>conhecimentos</span></h2>
-              <div className='main-icon'>
-                <hr /><IoIosFlash /><hr />
-              </div>
-              <p className='main-text-about'>Uma ampla experiência n área de atuação profissional é fundamental.<br />
-                Fascinado por computação, estou sempre aberto a novos desafios.</p>
+        <section className='main'>
+          <div className='main-text'>
+            <h2 className='main-text-h2 knowledge'>Outros<span>conhecimentos</span></h2>
+            <div className='main-icon'>
+              <hr /><IoIosFlash /><hr />
             </div>
-            <div className='container-box row'>
-                <div className='box-info column'>
-                    < DiResponsive />
-                    <h3>Responsividade</h3>
-                    <p>Procuro sempre trazer uma otima experiência para o usuário, penso na usuabilidade como mobile e desktop</p>
-                </div>
-                <div className='box-info column'>
-                    < DiResponsive />
-                    <h3>Responsividade</h3>
-                    <p>Procuro sempre trazer uma otima experiência para o usuário, penso na usuabilidade como mobile e desktop</p>
-                </div>
-                <div className='box-info column'>
-                    < DiResponsive />
-                    <h3>Responsividade</h3>
-                    <p>Procuro sempre trazer uma otima experiência para o usuário, penso na usuabilidade como mobile e desktop</p>
-                </div>
-                <div className='box-info column'>
-                    < DiResponsive />
-                    <h3>Responsividade</h3>
-                    <p>Procuro sempre trazer uma otima experiência para o usuário, penso na usuabilidade como mobile e desktop</p>
-                </div>
-              </div>
-          </section>
+            <p className='main-text-about'>Uma ampla experiência n área de atuação profissional é fundamental.<br />
+              Fascinado por computação, estou sempre aberto a novos desafios.</p>
+          </div>
+          <div className='container-box row'>
+            <div className='box-info column'>
+              < MdOutlineComputer />
+              <h3>Responsividade</h3>
+              <p>Procuro sempre trazer uma otima experiência para o usuário, penso na usuabilidade como mobile e desktop</p>
+            </div>
+            <div className='box-info column'>
+              < IoRocketOutline />
+              <h3>Performance</h3>
+              <p>Uma aplicação deve ser sempre pensada em seu alto crescimento, para isso priorizo a performance desde seu início.</p>
+            </div>
+            <div className='box-info column'>
+              < FaPencilRuler />
+              <h3>UI/UX Designer</h3>
+              <p>Estou estudando UI/UX para criação de interfaces para complementar o conhecimento da experiência do usuário.</p>
+            </div>
+            <div className='box-info column'>
+              < MdOutlineComputer />
+              <h3>Responsividade</h3>
+              <p>Procuro sempre trazer uma otima experiência para o usuário, penso na usuabilidade como mobile e desktop</p>
+            </div>
+          </div>
+        </section>
 
         {/* minha experiencia */}
-        {/* <section className='main'>
+        <section className='main'>
           <div className='main-text'>
             <h2 className='main-text-h2'>Sobre<span>Mim</span></h2>
             <div className='main-icon'>
@@ -141,10 +158,10 @@ function App() {
               <p className='main-text-about'>{dadosGit.bio}</p>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* alguns projetos */}
-        {/* <section className='main'>
+        <section className='main'>
           <div className='main-text'>
             <h2 className='main-text-h2'>Sobre<span>Mim</span></h2>
             <div className='main-icon'>
@@ -167,7 +184,7 @@ function App() {
               <p className='main-text-about'>{dadosGit.bio}</p>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* <section className='container-language'>
           <div className='content-language'>
@@ -229,7 +246,7 @@ function App() {
       </main>
       <footer>
         <div className='info-footer'>
-          <p>c 2022-2023 Ruan Noleto. <span>Feito com <BsFillHeartFill className='img-heart' /> em São Luis, MA.</span></p>
+          <p>&copy; 2022-2023 Ruan Noleto. <span>Feito com <BsFillHeartFill className='img-heart' /> em São Luis, MA.</span></p>
           <nav className="navigation-icon">
             <ul className='nav-menu-icon icon-footer'>
               <li><BsGithub /></li>

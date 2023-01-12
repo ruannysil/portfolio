@@ -121,8 +121,10 @@
 }
 
 .home-text .text-h1 {
-  font-size: 2em;
-  font-weight: 500;
+  font-size: 1.6em;
+  display: flex;
+  justify-content: center;
+  gap: 13px;
   line-height: 2rem;
   color: var(--white);
 }
@@ -135,7 +137,7 @@
   color: var(--white);
   border: 2px solid var(--white);
   border-radius: 16px;
-  padding: 6px 0px;
+  padding: 6px 12px;
   font-size: 12px;
   cursor: pointer;
 }
@@ -287,7 +289,8 @@ img {
 }
 
 .box-info svg {
-  font-size: 3.5em;
+  font-size: 1.5em;
+  margin-top: 1em;
   color: var(--red);
 }
 
@@ -298,7 +301,7 @@ img {
 
 .box-info p {
   margin: 1.5em 0;
-  font-size: 12px;  
+  font-size: 12px;
 }
 
 .container-box {
@@ -538,8 +541,24 @@ img {
 }
 
 @media (max-width: 480px) {
+  .home-text .text-h1 {
+    font-size: 1.4em;
+  }
+
+  .profile-name h2 {
+    font-size: 1.3em;
+  }
+
+  .main-text .main-text-h2 {
+    font-size: 1.3rem;
+  }
+
   .knowledge {
     flex-direction: column;
+  }
+
+  .main-text-about {
+    font-size: 13px;
   }
 }
 

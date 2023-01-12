@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { BsGithub, BsLinkedin, BsFacebook, BsInstagram, BsWhatsapp,BsFillHeartFill } from 'react-icons/bs'
+import { BsGithub, BsLinkedin, BsFacebook, BsInstagram, BsWhatsapp, BsFillHeartFill } from 'react-icons/bs';
+import { DiResponsive } from 'react-icons/di';
 import { IoIosFlash } from 'react-icons/io'
 import { SlArrowDown } from 'react-icons/sl'
 import './App.css';
@@ -7,7 +8,7 @@ import './App.css';
 function App() {
   const [active_menu, setActive_menu] = useState(false);
   const [dadosGit, setDadosGit] = useState([]);
-  const [respositories, setRepositories] = useState([]);
+  // const [respositories, setRepositories] = useState([]);
   useEffect(() => {
     fetch('https://api.github.com/users/ruannysil')
       .then(res => res.json())
@@ -56,8 +57,7 @@ function App() {
 
         <span className='icon-arrow'><SlArrowDown /></span>
 
-        {/* sobre min */}
-        <section className='main'>
+        {/* <section className='main'>
           <div className='main-text'>
             <h2 className='main-text-h2'>Sobre<span>Mim</span></h2>
             <div className='main-icon'>
@@ -80,33 +80,45 @@ function App() {
               <p className='main-text-about'>{dadosGit.bio}</p>
             </div>
           </div>
-        </section>
-
+        </section> */}
+        {/* sobre min */}
 
         {/* outros conhecimentos */}
-        <section className='main'>
-          <div className='main-text'>
-            <h2 className='main-text-h2'>Outros<span>conhecimentos</span></h2>
-            <div className='main-icon'>
-              <hr /><IoIosFlash /><hr />
-            </div>
-            <p className='main-text-about'>Uma ampla experiência n área de atuação profissional é fundamental.<br/>
-            Fascinado por computação, estou sempre aberto a novos desafios.</p>
-          </div>
-          <div className='info-profile'>
-            <img src={dadosGit.avatar_url} alt='img' />
-            <div className='profile-name'>
-              <h2>Olá!<span>Sou {dadosGit.name}</span></h2>
-              <div className='name-skil'>
-                <h4>Developer</h4> <hr /> <h4>Designer</h4>
+          <section className='main'>
+            <div className='main-text'>
+              <h2 className='main-text-h2 knowledge'>Outros<span>conhecimentos</span></h2>
+              <div className='main-icon'>
+                <hr /><IoIosFlash /><hr />
               </div>
-              <p className='main-text-about'>{dadosGit.bio}</p>
+              <p className='main-text-about'>Uma ampla experiência n área de atuação profissional é fundamental.<br />
+                Fascinado por computação, estou sempre aberto a novos desafios.</p>
             </div>
-          </div>
-        </section>
+            <div className='container-box row'>
+                <div className='box-info column'>
+                    < DiResponsive />
+                    <h3>Responsividade</h3>
+                    <p>Procuro sempre trazer uma otima experiência para o usuário, penso na usuabilidade como mobile e desktop</p>
+                </div>
+                <div className='box-info column'>
+                    < DiResponsive />
+                    <h3>Responsividade</h3>
+                    <p>Procuro sempre trazer uma otima experiência para o usuário, penso na usuabilidade como mobile e desktop</p>
+                </div>
+                <div className='box-info column'>
+                    < DiResponsive />
+                    <h3>Responsividade</h3>
+                    <p>Procuro sempre trazer uma otima experiência para o usuário, penso na usuabilidade como mobile e desktop</p>
+                </div>
+                <div className='box-info column'>
+                    < DiResponsive />
+                    <h3>Responsividade</h3>
+                    <p>Procuro sempre trazer uma otima experiência para o usuário, penso na usuabilidade como mobile e desktop</p>
+                </div>
+              </div>
+          </section>
 
         {/* minha experiencia */}
-        <section className='main'>
+        {/* <section className='main'>
           <div className='main-text'>
             <h2 className='main-text-h2'>Sobre<span>Mim</span></h2>
             <div className='main-icon'>
@@ -129,10 +141,10 @@ function App() {
               <p className='main-text-about'>{dadosGit.bio}</p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* alguns projetos */}
-        <section className='main'>
+        {/* <section className='main'>
           <div className='main-text'>
             <h2 className='main-text-h2'>Sobre<span>Mim</span></h2>
             <div className='main-icon'>
@@ -155,16 +167,16 @@ function App() {
               <p className='main-text-about'>{dadosGit.bio}</p>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className='container-language'>
+        {/* <section className='container-language'>
           <div className='content-language'>
           <h2>Português<p>Comunicação nativa</p></h2><h2>Inglês<p>Comunicação basica</p></h2>
           </div>
-        </section>
+        </section> */}
 
         {/* minha educação */}
-        <section className='main'>
+        {/* <section className='main'>
           <div className='main-text'>
             <h2 className='main-text-h2'>Sobre<span>Mim</span></h2>
             <div className='main-icon'>
@@ -187,7 +199,7 @@ function App() {
               <p className='main-text-about'>{dadosGit.bio}</p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* vamos conversar */}
         <section className='main'>
@@ -217,16 +229,16 @@ function App() {
       </main>
       <footer>
         <div className='info-footer'>
-          <p>c 2022-2023 Ruan Noleto. <span>Feito com <BsFillHeartFill className='img-heart'/> em São Luis, MA.</span></p>
+          <p>c 2022-2023 Ruan Noleto. <span>Feito com <BsFillHeartFill className='img-heart' /> em São Luis, MA.</span></p>
           <nav className="navigation-icon">
-              <ul className='nav-menu-icon icon-footer'>
-                <li><BsGithub /></li>
-                <li><BsLinkedin /></li>
-                <li><BsFacebook /></li>
-                <li><BsInstagram /></li>
-                <li><BsWhatsapp /></li>
-              </ul>
-            </nav>
+            <ul className='nav-menu-icon icon-footer'>
+              <li><BsGithub /></li>
+              <li><BsLinkedin /></li>
+              <li><BsFacebook /></li>
+              <li><BsInstagram /></li>
+              <li><BsWhatsapp /></li>
+            </ul>
+          </nav>
         </div>
       </footer>
     </div>

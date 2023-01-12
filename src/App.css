@@ -232,7 +232,6 @@ img {
   font-size: 2rem;
   display: flex;
   gap: 0.4em;
-  font-weight: 400;
   color: var(--dark);
   margin-bottom: 0.5rem;
   font-weight: 600;
@@ -241,6 +240,14 @@ img {
 
 .main-text .main-text-h2 span {
   font-weight: 300;
+}
+
+.knowledge {
+  font-weight: 300 !important;
+}
+
+.knowledge span {
+  font-weight: 600 !important;
 }
 
 .main-icon {
@@ -278,6 +285,47 @@ img {
   margin-bottom: 1em;
   gap: 2em;
 }
+
+.box-info svg {
+  font-size: 3.5em;
+  color: var(--red);
+}
+
+.box-info {
+  padding: 10px;
+  border: 1px solid var(--darkBlue);
+}
+
+.box-info p {
+  margin: 1.5em 0;
+  font-size: 12px;  
+}
+
+.container-box {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  /* gap: 1em; */
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 21%;
+  max-width: 25%;
+  padding: 0 4px;
+  margin: 5px 1em;
+}
+
+.column h3 {
+  font-size: 16px;
+}
+
 
 .profile-name {
   display: flex;
@@ -325,7 +373,7 @@ img {
 .icon-footer li {
   border: 1px solid;
   border-radius: 100%;
-  height: 27  px;
+  height: 27px;
   width: 27px;
   align-items: center;
   justify-content: center;
@@ -352,7 +400,8 @@ img {
 
 .content-language h2 {
   background: var(--darkBlue);
-  padding: 8px 3em; ;
+  padding: 8px 3em;
+  ;
   color: var(--white);
   border: 1px dashed var(--white);
   text-align: center;
@@ -378,6 +427,13 @@ img {
   display: flex;  
   justify-content: center;
 } */
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
 
 @media (max-width: 785px) {
   .navigation {
@@ -453,12 +509,13 @@ img {
     margin: 0px 7.5em 0 7.5em;
   }
 
-  .content-language , .content-language h2{
+  .content-language,
+  .content-language h2 {
     gap: 2em;
     padding: 3px 1.6em;
     font-size: large;
   }
-  
+
 
   .info-footer p {
     font-size: 10px;
@@ -473,6 +530,18 @@ img {
   }
 }
 
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .knowledge {
+    flex-direction: column;
+  }
+}
 
 
 

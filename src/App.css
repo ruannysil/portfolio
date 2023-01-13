@@ -389,7 +389,7 @@ img {
 }
 
 .container-language {
-  height: 16vh;
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -560,6 +560,11 @@ img {
   .main-text-about {
     font-size: 13px;
   }
+
+  .container-language {
+    height: 18vh;
+  }
+
 }
 
 

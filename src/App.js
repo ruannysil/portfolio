@@ -6,18 +6,24 @@ import { IoRocketOutline } from 'react-icons/io5'
 import { SlArrowDown } from 'react-icons/sl'
 import { FaPencilRuler } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation';
+import Experience from './components/experience/Experience'
 import './App.css';
 
 function App() {
   const [active_menu, setActive_menu] = useState(false);
   const [dadosGit, setDadosGit] = useState([]);
-  // const [respositories, setRepositories] = useState([]);
   useEffect(() => {
     fetch('https://api.github.com/users/ruannysil')
       .then(res => res.json())
       .then(data => setDadosGit(data))
   }, []);
 
+  // const [resposite, setReposite] = useState([]);
+  // useEffect(() => {
+  //   fetch('https://api.github.com/users/ruannysil/repos')
+  //     .then(res => res.json())
+  //     .then(data => setReposite(data))
+  // }, []);
 
   return (
     <div className="App">
@@ -25,7 +31,7 @@ function App() {
         <nav className="navigation">
           <a href='#/' className='logo'>RUANNY<span>NOLETO</span></a>
           <ul id='menu' className={`nav-menu ${active_menu ? 'active' : ''}`}>
-            <li><a href='#/'>Inicio<span className='nav-menu-span'></span></a></li>
+            <li><a href='#/'>Inicio</a></li>
             <li><a href='#/'>Sobre</a></li>
             <li><a href='#/'>Conhecimento</a></li>
             <li><a href='#/'>Experiencia</a></li>
@@ -54,10 +60,10 @@ function App() {
                   'UX/UI Designer',
                   5000,
                 ]}
-                speed={5} 
+                speed={5}
                 style={{ fontSize: '1em' }}
                 wrapper="h1"
-                repeat={Infinity} 
+                repeat={Infinity}
               /></h1>
             <nav className="navigation-icon">
               <ul className='nav-menu-icon'>
@@ -74,7 +80,7 @@ function App() {
 
         <span className='icon-arrow'><SlArrowDown /></span>
 
-        {/* <section className='main'>
+        <section className='main'>
           <div className='main-text'>
             <h2 className='main-text-h2'>Sobre<span>Mim</span></h2>
             <div className='main-icon'>
@@ -97,9 +103,9 @@ function App() {
               <p className='main-text-about'>{dadosGit.bio}</p>
             </div>
           </div>
-        </section> */}
+        </section>
         {/* sobre min */}
-
+       
         {/* outros conhecimentos */}
         <section className='main'>
           <div className='main-text'>
@@ -134,31 +140,14 @@ function App() {
           </div>
         </section>
 
-        {/* minha experiencia */}
-        <section className='main'>
-          <div className='main-text'>
-            <h2 className='main-text-h2'>Sobre<span>Mim</span></h2>
-            <div className='main-icon'>
-              <hr /><IoIosFlash /><hr />
-            </div>
-            <p className='main-text-about'>Sou um Desenvolvedor Front-end Js júnior.<br />
-              🚀 Apaixonado por tecnologia,
-              Gosto muito de desafios, estou sempre buscando conhecimento e formas fáceis de deixar o código o mais limpo e organizado possível.<br />
-              👉 Conhecimento:
-              Html, Css, React JS, Material UI, Chakra UI, Git e Github.
-              📚Atualmente estou buscando adquirir mais conhecimento na área, para me atualizar como um bom programador front-end.</p>
-          </div>
-          <div className='info-profile'>
-            <img src={dadosGit.avatar_url} alt='img' />
-            <div className='profile-name'>
-              <h2>Olá!<span>Sou {dadosGit.name}</span></h2>
-              <div className='name-skil'>
-                <h4>Developer</h4> <hr /> <h4>Designer</h4>
-              </div>
-              <p className='main-text-about'>{dadosGit.bio}</p>
-            </div>
+        <section className='container-language'>
+          <div className='content-language'>
+            <h2>Português<p>Comunicação nativa</p></h2><h2>Inglês<p>Comunicação basica</p></h2>
           </div>
         </section>
+
+        {/* minha experiencia */}
+        <Experience />
 
         {/* alguns projetos */}
         <section className='main'>
@@ -186,11 +175,6 @@ function App() {
           </div>
         </section>
 
-        {/* <section className='container-language'>
-          <div className='content-language'>
-          <h2>Português<p>Comunicação nativa</p></h2><h2>Inglês<p>Comunicação basica</p></h2>
-          </div>
-        </section> */}
 
         {/* minha educação */}
         {/* <section className='main'>

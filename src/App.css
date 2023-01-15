@@ -276,6 +276,7 @@ img {
   color: var(--dark);
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .info-profile {

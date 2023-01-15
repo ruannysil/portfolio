@@ -16,7 +16,7 @@
     border: 1px solid #000;
     background: var(--darkBlue);
     border-radius: 5px;
-    padding: 4px 15px;
+    padding: 3px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -27,6 +27,11 @@
     font-size: 12px;
     font-weight: 500;
     transition: all 0.5s;
+    width: 5em;
+    height: 2em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
   
   .navigat ul li:hover {

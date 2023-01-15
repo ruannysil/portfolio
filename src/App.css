@@ -57,6 +57,7 @@
   font-size: 17px;
   font-weight: 500;
   transition: all 0.5s;
+  
 }
 
 .navigation ul li a:hover {
@@ -172,7 +173,7 @@ img {
   border-radius: 104%;
   height: 67%; */
   width: 10em;
-  border-radius: 104%;
+  /* border-radius: 104%; */
   height: 10em;
 }
 
@@ -432,12 +433,19 @@ img {
   justify-content: center;
 } */
 
+@media (max-width: 915px) {
+  .nav-code{
+    gap: 0.6rem !important;
+  }
+}
+
 @media (max-width: 800px) {
   .column {
     flex: 50%;
     max-width: 50%;
   }
 }
+
 
 @media (max-width: 785px) {
   .navigation {

@@ -30,6 +30,7 @@
   }
   
   .navigat ul li:hover {
+    border: 1px solid var(--red);
     background: var(--red);
   }
 

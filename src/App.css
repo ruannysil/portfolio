@@ -514,8 +514,8 @@ img {
 
   .content-language,
   .content-language h2 {
-    gap: 2em;
-    padding: 3px 1.6em;
+    gap: 1em;
+    padding: 3px 0.9em;
     font-size: large;
   }
 

@@ -47,18 +47,19 @@ function App() {
               <TypeAnimation className='text-h1'
                 sequence={[
                   'Ruanny',
-                  5000,
+                  9000,
                   'Developer',
-                  5000,
+                  9000,
                   'Front-end',
-                  5000,
+                  9000,
                   'UX/UI Designer',
-                  5000,
+                  9000,
                 ]}
                 speed={5}
                 style={{ fontSize: '1em' }}
                 wrapper="h1"
                 repeat={Infinity}
+                cursor={true}
               /></h1>
             <nav className="navigation-icon">
               <ul className='nav-menu-icon'>
@@ -69,7 +70,7 @@ function App() {
                 <li><BsWhatsapp /></li>
               </ul>
             </nav>
-            <p className='home-text'><a href='./curriculo.pdf'>Ver Currículo</a></p>
+            <a href='./curriculo.pdf'><p className='home-text'>Ver Currículo</p></a>
           </div>
         </section>
 
@@ -100,7 +101,7 @@ function App() {
           </div>
         </section>
         {/* sobre min */}
-       
+
         {/* outros conhecimentos */}
         <section className='main'>
           <div className='main-text'>

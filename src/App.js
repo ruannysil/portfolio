@@ -18,13 +18,6 @@ function App() {
       .then(data => setDadosGit(data))
   }, []);
 
-  // const [resposite, setReposite] = useState([]);
-  // useEffect(() => {
-  //   fetch('https://api.github.com/users/ruannysil/repos')
-  //     .then(res => res.json())
-  //     .then(data => setReposite(data))
-  // }, []);
-
   return (
     <div className="App">
       <header className="App-header">
@@ -53,6 +46,8 @@ function App() {
             <h1 className='text-h1'>Sou
               <TypeAnimation className='text-h1'
                 sequence={[
+                  'Ruanny',
+                  5000,
                   'Developer',
                   5000,
                   'Front-end',
@@ -74,7 +69,7 @@ function App() {
                 <li><BsWhatsapp /></li>
               </ul>
             </nav>
-            <p className='home-text'>Ver Currículo</p>
+            <p className='home-text'><a href='./curriculo.pdf'>Ver Currículo</a></p>
           </div>
         </section>
 

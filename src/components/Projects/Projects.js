@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from 'react'
 import { IoIosFlash } from 'react-icons/io'
-import './Experience.css';
+import './Projects.css';
 
-export default function Experience() {
+export default function Projects() {
 
   const [resposite, setReposite] = useState([]);
   useEffect(() => {

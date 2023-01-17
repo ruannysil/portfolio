@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--white);
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('bg-program.jpg');
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('assets/bg-program.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

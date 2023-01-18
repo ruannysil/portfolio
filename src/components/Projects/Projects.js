@@ -134,7 +134,7 @@ export default function Projects() {
 
   return (
     <div>
-      <section className='main'>
+      <section className='main' id="projects">
         <div className='main-text'>
           <h2 className='main-text-h2 knowledge'>Alguns<span>projetos</span></h2>
           <div className='main-icon'>

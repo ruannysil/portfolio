@@ -25,10 +25,11 @@ body {
 
 :root {
   --blue: #2528d6;
+  --blueDarkBlack: #08081f;
   --white: #fff;
   --dark: #1e1e1e;
   --darkBlue: #313245;
-  --red: #f80000;
+  --red: #f60606;
 }
 
 h1,
@@ -40,3 +41,6 @@ p {
   color: var(--dark);
 }
 
+a {
+   cursor: pointer;
+}

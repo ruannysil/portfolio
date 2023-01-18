@@ -1,23 +1,25 @@
 import React from 'react';
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 import { TypeAnimation } from 'react-type-animation';
 import { BsGithub, BsLinkedin, BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs';
-import './Home.css';
+// import Projects from './../Projects/Projects';
+import { SlArrowDown } from 'react-icons/sl'
 
 export default function Home() {
   const [active_menu, setActive_menu] = useState(false);
   return (
     <>
-      <header className="App-header">
-      <nav className="navigation">
+      <header className="App-header" id='/'>
+      <nav className="navigation" >
         <a href='#/' className='logo'>RUANNY<span>NOLETO</span></a>
         <ul id='menu' className={`nav-menu ${active_menu ? 'active' : ''}`}>
-          <li><a href='/'>Inicio</a></li>
-          <li><a href='./about'>Sobre</a></li>
-          <li><a href='#/'>Conhecimento</a></li>
-          <li><a href='#/'>Experiencia</a></li>
-          <li><a href='#/'>Educação</a></li>
-          <li><a href='#/'>Contato</a></li>
+          <li><Link to='/' spy={true} smooth={true} offset={50} duration={500}>Inicio</Link></li>
+          <li><Link to='about' spy={true} smooth={true} offset={50} duration={500}>Sobre</Link></li>
+          <li><Link to='skills' spy={true} smooth={true} offset={50} duration={500}>Conhecimento</Link></li>
+          <li><Link to='projects' spy={true} smooth={true} offset={50} duration={500}>Projetos</Link></li>
+          <li><Link to='certificate' spy={true} smooth={true} offset={50} duration={500}>Certificados</Link></li>
+          <li><Link to='#/' spy={true} smooth={true} offset={50} duration={500}>Contato</Link></li>
         </ul>
         <div className={`menu ${active_menu ? 'active' : ''}`} onClick={() => setActive_menu(!active_menu)}>
           <span className='bar'></span>
@@ -58,6 +60,7 @@ export default function Home() {
             </nav>
             <a href='./curriculo.pdf'><p className='home-text'>Ver Currículo</p></a>
           </div>
+          <span className='icon-arrow'><SlArrowDown /></span>
         </section>
     </>
   );

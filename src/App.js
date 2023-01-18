@@ -1,13 +1,11 @@
 import { IoIosFlash } from 'react-icons/io'
-import { MdOutlineComputer } from 'react-icons/md';
-import { IoRocketOutline } from 'react-icons/io5'
 import { SlArrowDown } from 'react-icons/sl'
-import { FaPencilRuler } from 'react-icons/fa'
-import { TypeAnimation } from 'react-type-animation';
-import Experience from './components/Projects/Projects'
-import {Routes, Route} from 'react-router-dom'
+// import { TypeAnimation } from 'react-type-animation';
+import Projects from './components/Projects/Projects'
 import Home from './components/Home/Home';
 import About from './components/About/About';
+import Certificate from './components/Certificate/Certificate';
+import Skills from './components/Skills/Skills'
 import Footer from './components/Footer/Footer';
 import './App.css';
 
@@ -16,107 +14,19 @@ function App() {
 
   return (
     <div className="App">
-      <Routes>
-        {/* <Route path='/' element={<Home />}/>
-        <Route path='/about' element={<About />}/> */}
-        {/* <Route path='/' element={<Home />}/>
-        <Route path='/' element={<Home />}/>
-        <Route path='/' element={<Home />}/>
-        <Route path='/' element={<Home />}/> */}
-      </Routes>
       <Home />
       <main>
-        {/* sobre mim */}
-
-        <span className='icon-arrow'><SlArrowDown /></span>
-
-        {/* sobre min */}
+        {/* <span className='icon-arrow'><SlArrowDown /></span> */}
         <About />
-        {/* outros conhecimentos */}
-        <section className='main'>
-          <div className='main-text'>
-            <h2 className='main-text-h2 knowledge'>Outros<span>conhecimentos</span></h2>
-            <div className='main-icon'>
-              <hr /><IoIosFlash /><hr />
-            </div>
-            <p className='main-text-about'>Uma ampla experiência n área de atuação profissional é fundamental.<br />
-              Fascinado por computação, estou sempre aberto a novos desafios.</p>
-          </div>
-          <div className='container-box row'>
-            <div className='box-info column'>
-              < MdOutlineComputer />
-              <h3>Responsividade</h3>
-              <p>Procuro sempre trazer uma otima experiência para o usuário, penso na usuabilidade como mobile e desktop</p>
-            </div>
-            <div className='box-info column'>
-              < IoRocketOutline />
-              <h3>Performance</h3>
-              <p>Uma aplicação deve ser sempre pensada em seu alto crescimento, para isso priorizo a performance desde seu início.</p>
-            </div>
-            <div className='box-info column'>
-              < FaPencilRuler />
-              <h3>UI/UX Designer</h3>
-              <p>Estou estudando UI/UX para criação de interfaces para complementar o conhecimento da experiência do usuário.</p>
-            </div>
-            <div className='box-info column'>
-              < MdOutlineComputer />
-              <h3>Responsividade</h3>
-              <p>Procuro sempre trazer uma otima experiência para o usuário, penso na usuabilidade como mobile e desktop</p>
-            </div>
-          </div>
-        </section>
-
+        <Skills />
         <section className='container-language'>
           <div className='content-language'>
             <h2>Português<p>Comunicação nativa</p></h2><h2>Inglês<p>Comunicação basica</p></h2>
           </div>
         </section>
-
-        {/* minha experiencia */}
-        <Experience />
-
-        {/* alguns projetos */}
-
-
-
-        {/* minha educação */}
-        <section className='main'>
-          <div className='main-text'>
-            <h2 className='main-text-h2 knowledge'>minha<span>educação</span></h2>
-            <div className='main-icon'>
-              <hr /><IoIosFlash /><hr />
-            </div>
-            <p className='main-text-about'>
-              📚 A educação é o principio para a própria evolução profissional, viso aprender e desenvolver minhas experiências na prática ao inves de estudos muito téoricos.</p>
-          </div>
-          <div className='info-profile info-main'>
-            <div className='profile-name info-crl'>
-              <h2><span>DevSamurai</span></h2>
-              <span>conhecimento: <br/> <p>html, css, javascript, logica de programação</p></span>  
-              <div className='name-skil'>
-                <h4>2022</h4> <hr /> <h4>2022</h4>
-              </div>
-              <p className='main-text-about'>adqueri grande conhecimento no curso devsamurai</p>
-            </div>
-            <div className='profile-name info-crl'>
-              <h2><span>DevSamurai</span></h2>
-              <span>conhecimento: <br/> <p>html, css, javascript, logica de programação</p></span>  
-              <div className='name-skil'>
-                <h4>2022</h4> <hr /> <h4>2022</h4>
-              </div>
-              <p className='main-text-about'>adqueri grande conhecimento no curso devsamurai</p>
-            </div>
-            <div className='profile-name info-crl'>
-              <h2><span>DevSamurai</span></h2>
-              <span>conhecimento: <br/> <p>html, css, javascript, logica de programação</p></span>  
-              <div className='name-skil'>
-                <h4>2022</h4> <hr /> <h4>2022</h4>
-              </div>
-              <p className='main-text-about'>adqueri grande conhecimento no curso devsamurai</p>
-            </div>
-          </div>
-        </section>
-
+        <Projects />
+        <Certificate />
+        {/* area de contatos */}
         <Footer />
         {/* vamos conversar */}
         {/* <section className='main'>

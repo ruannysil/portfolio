@@ -13,7 +13,7 @@ export default function About() {
   }, []);
 
   return (
-    <section className='main'>
+    <section className='main about' id='about'>
       <div className='main-text'>
         <h2 className='main-text-h2'>Sobre<span>Mim</span></h2>
         <div className='main-icon'>

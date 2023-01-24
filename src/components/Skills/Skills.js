@@ -15,7 +15,7 @@ export default function Skills() {
             <div className='main-icon'>
               <hr /><IoIosFlash /><hr />
             </div>
-            <p className='main-text-about'>Uma ampla experiência n área de atuação profissional é fundamental.<br />
+            <p className='main-text-about'>Uma ampla experiência na área de atuação profissional é fundamental.<br />
               Fascinado por computação, estou sempre aberto a novos desafios.</p>
           </div>
           <div className='container-box row'>

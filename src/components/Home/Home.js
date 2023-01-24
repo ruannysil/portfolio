@@ -22,9 +22,9 @@ export default function Home() {
             <li><Link to='#/' spy={true} smooth={true} offset={50} duration={500}>Contato</Link></li>
           </ul>
           <div className={`menu ${active_menu ? 'active' : ''}`} onClick={() => setActive_menu(!active_menu)}>
-            <span className='bar'></span>
-            <span className='bar'></span>
-            <span className='bar'></span>
+            <span className='bar menubar'></span>
+            <span className='bar menubar'></span>
+            <span className='bar menubar'></span>
           </div>
         </nav>
       </header>
@@ -51,14 +51,14 @@ export default function Home() {
             /></h1>
           <nav className="navigation-icon">
             <ul className='nav-menu-icon'>
-              <li><BsGithub /></li>
-              <li><BsLinkedin /></li>
-              <li><BsFacebook /></li>
-              <li><BsInstagram /></li>
-              <li><BsWhatsapp /></li>
+              <li><a href='https://github.com/ruannysil' target="_blank"><BsGithub /></a></li>
+              <li><a href='https://www.linkedin.com/in/ruan-noleto-5587541aa/' target="_blank"><BsLinkedin /></a></li>
+              <li><a href='https://www.facebook.com/ruan.silva.5680899' target="_blank"><BsFacebook /></a></li>
+              <li><a href='https://www.instagram.com/sir_ruan_dev/' target="_blank"><BsInstagram /></a></li>
+              <li><a href='https://alvo.chat/xAz' target="_blank"><BsWhatsapp /></a></li>
             </ul>
           </nav>
-          <a href='./curriculo.pdf'><p className='home-text'>Ver Currículo</p></a>
+          <a href='../../assets/Ruanny-da-Silva-Noleto-Curriculo.pdf' download><p className='home-text'>Ver Currículo</p></a>
         </div>
         <span className='icon-arrow'><SlArrowDown /></span>
       </section>

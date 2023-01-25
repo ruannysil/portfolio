@@ -106,7 +106,7 @@
   height: 93vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('assets/bg-mario.gif');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/bg-mario.gif');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -506,14 +506,16 @@ img {
     max-width: 37rem;
     margin-bottom: 1em;
   }
+
   .column {
     flex: 50%;
     max-width: 50%;
   }
+
   .home {
     width: 100%;
     height: 60vh;
-}
+  }
 }
 
 @media (max-width: 785px) {
@@ -612,6 +614,7 @@ img {
   .info-footer svg {
     font-size: 20px;
   }
+
   .navigation ul {
     width: 10em;
     height: 24em;
@@ -664,16 +667,14 @@ img {
 }
 
 @media (max-width: 360px) {
-  /* .navigation ul {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding: 2em 15px;
-    width: 10em;
-    height: 55vh;
-    background: var(--dark);
-    z-index: 1;
-  } */
+  .nav-menu-icon {
+    gap: 0.3em;
+  }
+
+  .info-footer p {
+    font-size: 9px;
+  }
+
   .nav-menu.active {
     right: 0;
     top: 2.6em;

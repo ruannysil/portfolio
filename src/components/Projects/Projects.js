@@ -140,25 +140,25 @@ export default function Projects() {
           <div className='main-icon'>
             <hr /><IoIosFlash /><hr />
           </div>
-          <p className='main-text-about'>Uma ampla experiência na área de atuação profissional é fundamental.<br />
-            Fascinado por computação, estou sempre aberto a novos desafios.</p>
+          <p className='main-text-about'>Estes projetos tem como objetivos mostra meu crescimento e conhecimento com desenvolvedor front-end JS, projetos bem estruturados e focados sempre para facilitar a experiência do usuário.<br />
+            Sempre visado deixar os projetos responsivos tanto para Desktop como para Móbile.</p>
         </div>
         <div className='container-box row'>
           {resposite && resposite.map((item, key) => (
             <div className='box-info column' key={key}>
-            <img src={imagesGit.find((imgRepository) => item?.name === imgRepository.repo_name)?.imgScr || ''} />
-            <h4>{item.name}</h4>
-            <nav className='navigat'>
-              <ul className='nav-code'>
-                <li>
-                  <a href={item.html_url} target="_blank" rel="noreferrer">github</a>
-                </li>
-                <li>
-                  <a href={item.homepage} target="_blank" rel="noreferrer">projeto</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+              <img src={imagesGit.find((imgRepository) => item?.name === imgRepository.repo_name)?.imgScr || ''} alt="imagens dos projetos" />
+              <h4>{item.name}</h4>
+              <nav className='navigat'>
+                <ul className='nav-code'>
+                  <li>
+                    <a href={item.html_url} target="_blank" rel="noreferrer">github</a>
+                  </li>
+                  <li>
+                    <a href={item.homepage} target="_blank" rel="noreferrer">projeto</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           ))}
         </div>
       </section>

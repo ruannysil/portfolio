@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { IoIosFlash } from 'react-icons/io';
 import Message from '../../assets/mensagem.gif';
+import PerfectMessage from '../../assets/perfectmessage.gif';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
 import '../../index.css'
@@ -49,7 +50,7 @@ export default function Contact() {
         <div className='info-profile info-main'>
           <form className='profile-name sub-container' onSubmit={sendEmail}>
             <div className='container-text-img'>
-            <img className='img' src='https://visme.co/blog/wp-content/uploads/2020/02/header-1200.gif' />
+            <img className='img' src={PerfectMessage} />
               <h1 className='text'>Contato</h1>
               <img src={Message} className="logo-contact" alt="logo" />
             </div>

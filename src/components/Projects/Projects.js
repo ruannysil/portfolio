@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react'
 import { IoIosFlash } from 'react-icons/io'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import './Projects.css';
 
 export default function Projects() {
@@ -132,22 +134,26 @@ export default function Projects() {
     // },
   ];
 
+  useEffect(() => {
+    Aos.init({ duration: 1200});
+  }, []);
+
   return (
     <div>
       <section className='main' id="projects">
         <div className='main-text'>
-          <h2 className='main-text-h2 knowledge'>Alguns<span>projetos</span></h2>
+          <h2 data-aos="fade-down" className='main-text-h2 knowledge'>Alguns<span>projetos</span></h2>
           <div className='main-icon'>
             <hr /><IoIosFlash /><hr />
           </div>
-          <p className='main-text-about'>Estes projetos tem como objetivos mostra meu crescimento e conhecimento com desenvolvedor front-end JS, projetos bem estruturados e focados sempre para facilitar a experiência do usuário.<br />
+          <p className='main-text-about' data-aos="zoom-out">Estes projetos tem como objetivos mostra meu crescimento e conhecimento com desenvolvedor front-end JS, projetos bem estruturados e focados sempre para facilitar a experiência do usuário.<br />
             Sempre visado deixar os projetos responsivos tanto para Desktop como para Móbile.</p>
         </div>
         <div className='container-box row'>
           {resposite && resposite.map((item, key) => (
-            <div className='box-info column' key={key}>
+            <div className='box-info column' data-aos="zoom-in" key={key}>
               <img src={imagesGit.find((imgRepository) => item?.name === imgRepository.repo_name)?.imgScr || ''} alt="imagens dos projetos" />
-              <h4>{item.name}</h4>
+              <h4 >{item.name}</h4>
               <nav className='navigat'>
                 <ul className='nav-code'>
                   <li>

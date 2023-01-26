@@ -1,9 +1,11 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { IoIosFlash } from 'react-icons/io';
 import Message from '../../assets/mensagem.gif';
 import PerfectMessage from '../../assets/perfectmessage.gif';
 import emailjs from '@emailjs/browser';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import './Contact.css';
 import '../../index.css'
 
@@ -37,17 +39,21 @@ export default function Contact() {
     })
   }
 
+  useEffect(()=>{
+    Aos.init({duration: 1200})
+  },[])
+
   return (
     <section className='main contact' id='contact'>
         <div className='main-text'>
-          <h2 className='main-text-h2 knowledge'>Entre em<span>Contato</span></h2>
+          <h2 className='main-text-h2 knowledge' data-aos="fade-down">Entre em<span>Contato</span></h2>
           <div className='main-icon'>
             <hr /><IoIosFlash /><hr />
           </div>
           {/* <p className='main-text-about'>
             📚 A educação é o principio para a própria evolução profissional, viso aprender e desenvolver minhas experiências na prática ao inves de estudos muito téoricos.</p> */}
         </div>
-        <div className='info-profile info-main'>
+        <div className='info-profile info-main' data-aos="zoom-out">
           <form className='profile-name sub-container' onSubmit={sendEmail}>
             <div className='container-text-img'>
             <img className='img' src={PerfectMessage} />

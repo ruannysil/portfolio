@@ -20,6 +20,7 @@
   background: var(--blueDarkBlack);
   transition: all 0.5s;
   position: fixed;
+  z-index: 1;
 }
 
 .navigation .logo {
@@ -403,9 +404,18 @@ img {
 }
 
 .info-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.418)),url(./assets/global.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 10vh; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .info-footer p {
@@ -448,11 +458,25 @@ img {
 
 }
 
-.container-language {
+/* .container-language {
+  background: url(https://i.gifer.com/7xLv.gif);
   height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+
+.container-language {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.418)),url(./assets/global.gif);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .content-language {

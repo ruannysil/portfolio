@@ -56,7 +56,7 @@ export default function Contact() {
         <div className='info-profile info-main' data-aos="zoom-out">
           <form className='profile-name sub-container' onSubmit={sendEmail}>
             <div className='container-text-img'>
-            <img className='img' src={PerfectMessage} />
+            <img className='img' src={PerfectMessage} alt="git de uma menssagem"/>
               <h1 className='text'>Contato</h1>
               <img src={Message} className="logo-contact" alt="logo" />
             </div>

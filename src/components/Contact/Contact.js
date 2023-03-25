@@ -62,7 +62,7 @@ export default function Contact() {
             </div>
             <input className='input'
               type='text'
-              placeholder='Digite seu Nome'
+              placeholder='Digite seu nome'
               onChange={(e) => setName(e.target.value)}
               value={name}
             />
@@ -77,7 +77,7 @@ export default function Contact() {
 
             <textarea
               className='textarea'
-              placeholder='Digite aqui sua Mensagem'
+              placeholder='Digite aqui sua mensagem'
               onChange={(e) => setMessage(e.target.value)}
               value={message}
             />

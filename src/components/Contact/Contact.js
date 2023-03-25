@@ -70,7 +70,7 @@ export default function Contact() {
             <input
               className='input'
               type='text'
-              placeholder='Digite seu Email'
+              placeholder='Digite seu e-mail'
               onChange={(e) => setEmail(e.target.value)}
               value={email}
             />

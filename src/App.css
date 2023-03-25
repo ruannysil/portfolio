@@ -52,19 +52,16 @@
   font-size: 17px;
   font-weight: 500;
   transition: all 0.5s;
-
 }
 
 .navigation ul li a:hover {
   color: var(--violet);
 }
 
-
 .menu {
   cursor: pointer;
   display: none;
 }
-
 
 .menu .bar {
   display: block;
@@ -86,7 +83,8 @@
   height: 93vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/bg-mario.gif');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("assets/bg-mario.gif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -211,6 +209,18 @@ img {
   background: var(--white);
 }
 
+.main-container {
+  width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10%;
+    gap: 3em;
+    background: var(--white);
+}
+
 .main-text {
   max-width: 37rem;
   padding: 10px 0;
@@ -279,6 +289,25 @@ img {
   color: var(--red);
 }
 
+.box {
+  background: var(--darkBlue);
+  color: var(--white);
+  border-radius: 6px;
+}
+
+.box svg {
+  color: var(--white);
+}
+
+.box h3,
+p {
+  color: var(--white);
+}
+
+.text {
+  color: var(--white);
+}
+
 .box-info {
   padding: 10px;
   border: 1px solid var(--darkBlue);
@@ -310,7 +339,6 @@ img {
 .column h3 {
   font-size: 16px;
 }
-
 
 .profile-name {
   display: flex;
@@ -373,14 +401,15 @@ img {
 }
 
 .info-footer {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.418)),url(./assets/global.gif);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.418)),
+    url(./assets/global.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .info-footer p {
@@ -420,12 +449,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-
 .container-language {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.418)),url(./assets/global.gif);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.418)),
+    url(./assets/global.gif);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -446,7 +474,6 @@ img {
 .content-language h2 {
   background: var(--darkBlue);
   padding: 8px 3em;
-  ;
   color: var(--white);
   border: 1px dashed var(--white);
   text-align: center;
@@ -487,7 +514,6 @@ img {
 }
 
 @media (max-width: 785px) {
-
   .navigation ul {
     display: flex;
     align-items: center;
@@ -566,7 +592,6 @@ img {
     font-size: large;
   }
 
-
   .info-footer p {
     font-size: 10px;
   }
@@ -593,7 +618,6 @@ img {
 }
 
 @media (max-width: 480px) {
-
   .home-text .text-h1 {
     font-size: 1.4em;
   }
@@ -617,7 +641,6 @@ img {
   .container-language {
     height: 18vh;
   }
-
 }
 
 @media (max-width: 360px) {
